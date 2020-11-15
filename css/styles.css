@@ -1,15 +1,12 @@
-/* Цвет фона
-
+/* ЦВЕТ ФОНА
 Главный #ffffff
 Герой и футер #2F303A
 Наша команда #F5F4FA
 Кнопка-герой #2196F3
 Акцент кнопки-героя #188CE8
-
 Линия МЕЖДУ героем и футером #ECECEC
 
-Цвет текста 
-
+ЦВЕТ ТЕКСТА
 Цвет заголовков #212121
 Основной цвет #757575
 Акцент #2196F3
@@ -17,17 +14,14 @@
 Футер адрес #ffffff
 Футер телефон и почта rgba(255, 255, 255, 0.6)
 
-Цвета портфолио
-
+ЦВЕТА ПОРТФОЛИО
 Основной фон #FFFFFF
 Фон кнопок #F5F4FA
 Основной текст #757575
 Цвет заголовков и кнопок #212121
 Акцент #2196F3
 Цвет рамки карточек  #eeeeee
-
 Линия МЕЖДУ героем и футером #ECECEC
-
 */
 
 :root {
@@ -44,7 +38,9 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
   font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 ul {
@@ -58,6 +54,7 @@ a {
 /* Background */
 .hero {
   background-color: var(--bg-color);
+  letter-spacing: 0.06em;
 }
 
 .section.crew {
@@ -69,6 +66,13 @@ a {
 }
 
 /* Navigation */
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
 }
@@ -91,32 +95,70 @@ a {
 /* Titles */
 .hero-title {
   color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .feature-list .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .crew-list .title {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .project .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Text containers*/
+.feature-list .specification {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.crew-list .position {
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .project .type {
   color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
 }
 
 /* Button */
 .hero .button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
 }
 
 .hero .button:hover,
@@ -130,6 +172,10 @@ a {
 .selector .button {
   color: var(--title-text-color);
   background-color: var(--selector-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: inherit;
 }
 
 .selector .button:hover,
@@ -140,6 +186,12 @@ a {
 }
 
 /* Footer */
+.secondary-nav {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .secondary-nav .actual-adress {
   color: var(--primary-white-color);
 }
